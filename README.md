@@ -20,8 +20,10 @@ This application was deployed on a DigitalOcean LAMP Droplet. Development and te
 
 ## Setup (DigitalOcean LAMP Droplet)
 ### 1. Create a LAMP Droplet
+digitalocean.com allows you to create the droplet starting at $7 a month
 ### 2. SSH into the server and locate the web root
-## (Optional) Point a domain to the droplet
+ssh root@domain/DROPLET_IP
+### (Optional) Point a domain to the droplet
 If you are using a domain name, point your domain’s A record to the droplet IP using your domain registrar’s DNS manager.
 
 ### 3. Database Setup (MySQL)
@@ -32,7 +34,7 @@ If you are using a domain name, point your domain’s A record to the droplet IP
    - Create Users and Colors tables 
 3. Create a MySQL user and give permissions
    
-## 4. Backend (PHP API Endpoints)
+### 4. Backend (PHP API Endpoints)
 1. The API endpoints live in the `LAMPAPI/` directory on the server (under `/var/www/html`).
 2. Endpoints used by this app
    - `Login.php`
@@ -41,11 +43,11 @@ If you are using a domain name, point your domain’s A record to the droplet IP
 3. Update the database connection in the PHP files to match your MySQL credentials:
    - `$conn = new mysqli("localhost", "<username>", "<password>", "<database>");
 
-## 5. Frontend (HTML/CSS/JS)
+### 5. Frontend (HTML/CSS/JS)
 Upload the frontend files/directories into `/var/www/html` (e.g., `css/`, `images/`, `js/`, plus `index.html` and `color.html`).
 
-## 6. Testing / How to Access
-## How to Access the Application
+### 6. Testing / How to Access
+### How to Access the Application
 1. Make sure Apache and MySQL are running on the server.
 2. Open a web browser and navigate to:
 http://<YOUR_DROPLET_IP>/index.html
