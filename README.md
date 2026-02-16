@@ -7,25 +7,35 @@ The frontend is implemented with HTML, CSS, and JavaScript, providing a simple i
 This project was developed as part of the COLORS Lab and demonstrates core web development concepts including client server communication, APIs, database integration using the LAMP stack.
 This application was deployed on a DigitalOcean LAMP Droplet. Development and testing were performed directly on the server.
 
-## Technologies Used
-- Linux
-- Apache
-- MySQL
-- PHP
-- HTML
-- CSS
-- JavaScript
+## Setup (DigitalOcean LAMP Droplet)
+## Create a LAMP Droplet
+## SSH into the server and locate the web root
+## (Optional) Point a domain to the droplet
+If you are using a domain name, point your domain’s A record to the droplet IP using your domain registrar’s DNS manager.
 
-## Setup Instructions (High Level)
-1. Install Apache, MySQL, and PHP (LAMP stack).
-2. Place the project folder inside your Apache web directory.
-3. Import the provided SQL file to create required database tables.
-4. Update database credentials in the API files as needed.
-5. Access the site through your browser.
+## Database Setup (MySQL)
+1. Connect to MySQL:
+   - mysql -u root -p
+2. Create the database and tables
+   - create database
+   - Create `Users and `Colors tables 
+3. Create a MySQL user and give permissions
+   
+## Backend (PHP API Endpoints)
+1. The API endpoints live in the `LAMPAPI/` directory on the server (under `/var/www/html`).
+2. Endpoints used by this app
+   - `Login.php`
+   - `AddColor.php`
+   - `SearchColors.php`
+3. Update the database connection in the PHP files to match your MySQL credentials:
+   - `$conn = new mysqli("localhost", "<username>", "<password>", "<database>");
 
-## Running the Application
-1. Start Apache and MySQL.
-2. Navigate to:
+## Frontend (HTML/CSS/JS)
+Upload the frontend files/directories into `/var/www/html` (e.g., `css/`, `images/`, `js/`, plus `index.html` and `color.html`).
+
+## Testing / How to Access
+- Open the app in a browser:
+  - http://<YourDomainOrIP>/index.html
 
 ## AI Usage
 ChatGPT was used to assist with debugging, documentation, and understanding concepts as permitted by class policy
