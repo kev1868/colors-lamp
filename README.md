@@ -2,7 +2,10 @@ February, 15, 2026.
 # COLORS LAMP Application
 
 ## Description
-COLORS is a simple web application built using the LAMP stack that allows users to log in, add, and search colors. This project was originally developed during the COLORS Lab and has been organized here using version control best practices.
+COLORS is a web application built using the LAMP stack (Linux, Apache, MySQL, PHP) that allows users to log in and manage a personal collection of colors. After logging in, users can add new colors to the database and search existing colors by name or value.
+The frontend is implemented with HTML, CSS, and JavaScript, providing a simple interface for interacting with the application. The backend consists of PHP API endpoints that handle authentication, color creation, and color searching, with all data stored in a MySQL database.
+This project was developed as part of the COLORS Lab and demonstrates core web development concepts including client server communication, APIs, database integration using the LAMP stack.
+This application was deployed on a DigitalOcean LAMP Droplet. Development and testing were performed directly on the cloud server.
 
 ## Technologies Used
 - Linux
