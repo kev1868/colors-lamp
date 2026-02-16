@@ -18,7 +18,7 @@ If you are using a domain name, point your domain’s A record to the droplet IP
    - mysql -u root -p
 2. Create the database and tables
    - create database
-   - Create `Users and `Colors tables 
+   - Create Users and Colors tables 
 3. Create a MySQL user and give permissions
    
 ## Backend (PHP API Endpoints)
