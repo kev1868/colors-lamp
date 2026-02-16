@@ -8,12 +8,12 @@ This project was developed as part of the COLORS Lab and demonstrates core web d
 This application was deployed on a DigitalOcean LAMP Droplet. Development and testing were performed directly on the server.
 
 ## Setup (DigitalOcean LAMP Droplet)
-## Create a LAMP Droplet
-## SSH into the server and locate the web root
+### 1. Create a LAMP Droplet
+### 2. SSH into the server and locate the web root
 ## (Optional) Point a domain to the droplet
 If you are using a domain name, point your domain’s A record to the droplet IP using your domain registrar’s DNS manager.
 
-## Database Setup (MySQL)
+### 3. Database Setup (MySQL)
 1. Connect to MySQL:
    - mysql -u root -p
 2. Create the database and tables
@@ -21,7 +21,7 @@ If you are using a domain name, point your domain’s A record to the droplet IP
    - Create Users and Colors tables 
 3. Create a MySQL user and give permissions
    
-## Backend (PHP API Endpoints)
+## 4. Backend (PHP API Endpoints)
 1. The API endpoints live in the `LAMPAPI/` directory on the server (under `/var/www/html`).
 2. Endpoints used by this app
    - `Login.php`
@@ -30,10 +30,10 @@ If you are using a domain name, point your domain’s A record to the droplet IP
 3. Update the database connection in the PHP files to match your MySQL credentials:
    - `$conn = new mysqli("localhost", "<username>", "<password>", "<database>");
 
-## Frontend (HTML/CSS/JS)
+## 5. Frontend (HTML/CSS/JS)
 Upload the frontend files/directories into `/var/www/html` (e.g., `css/`, `images/`, `js/`, plus `index.html` and `color.html`).
 
-## Testing / How to Access
+## 6. Testing / How to Access
 - Open the app in a browser:
 - http://YourDomainOrIP/index.html
 
