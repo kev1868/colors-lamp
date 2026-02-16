@@ -35,7 +35,7 @@ Upload the frontend files/directories into `/var/www/html` (e.g., `css/`, `image
 
 ## Testing / How to Access
 - Open the app in a browser:
-  http://<YourDomainOrIP>/index.html
+- http://YourDomainOrIP/index.html
 
 ## AI Usage
 ChatGPT was used to assist with debugging, documentation, and understanding concepts as permitted by class policy
