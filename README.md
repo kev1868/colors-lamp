@@ -7,6 +7,17 @@ The frontend is implemented with HTML, CSS, and JavaScript, providing a simple i
 This project was developed as part of the COLORS Lab and demonstrates core web development concepts including client server communication, APIs, database integration using the LAMP stack.
 This application was deployed on a DigitalOcean LAMP Droplet. Development and testing were performed directly on the server.
 
+## Technologies Used
+- Linux (DigitalOcean Ubuntu LAMP Droplet)
+- Apache (Web server)
+- MySQL (Database)
+- PHP (Backend API)
+- HTML (Frontend structure)
+- CSS (Styling)
+- JavaScript (Frontend logic and API calls)
+- DigitalOcean (Cloud hosting)
+
+
 ## Setup (DigitalOcean LAMP Droplet)
 ### 1. Create a LAMP Droplet
 ### 2. SSH into the server and locate the web root
