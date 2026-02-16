@@ -45,8 +45,13 @@ If you are using a domain name, point your domain’s A record to the droplet IP
 Upload the frontend files/directories into `/var/www/html` (e.g., `css/`, `images/`, `js/`, plus `index.html` and `color.html`).
 
 ## 6. Testing / How to Access
-- Open the app in a browser:
-- http://YourDomainOrIP/index.html
+## How to Access the Application
+1. Make sure Apache and MySQL are running on the server.
+2. Open a web browser and navigate to:
+http://<YOUR_DROPLET_IP>/index.html
+Replace `<YOUR_DROPLET_IP>` with your actual DigitalOcean droplet IP address
+
+
 
 ## AI Usage
 ChatGPT was used to assist with debugging, documentation, and understanding concepts as permitted by class policy
