@@ -1,0 +1,17 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+*.env
+config.php
+settings.php
+
+# Server-specific files
+*.pem
