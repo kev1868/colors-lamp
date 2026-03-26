@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class User {
+  ID : int <<PK>>
+  FirstName : string
+  LastName : string
+  Login : string
+  Password : string
+}
+
+class Color {
+  ID : int <<PK>>
+  Name : string
+  UserID : int <<FK>>
+}
+
+User "1" -- "0..*" Color : owns
+@enduml
