@@ -1,0 +1,35 @@
+{
+  "name": "colors-lamp",
+  "version": "1.0.0",
+  "description": "February, 15, 2026\r # COLORS LAMP Application",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint:html": "htmlhint \"public/**/*.html\"",
+    "lint:css" : "stylelint \"public/**/*.css\"",
+    "lint:js": "eslint \"public/js/code.js\"",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kev1868/colors-lamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kev1868/colors-lamp/issues"
+  },
+  "homepage": "https://github.com/kev1868/colors-lamp#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
