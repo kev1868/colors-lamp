@@ -183,3 +183,14 @@ function searchColor()
 	}
 	
 }
+
+if (typeof module !== "undefined" && module.exports) {
+	module.exports = {
+		doLogin,
+		saveCookie,
+		readCookie,
+		doLogout,
+		addColor,
+		searchColor
+	};
+}
